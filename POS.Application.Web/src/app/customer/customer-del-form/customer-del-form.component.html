@@ -1,0 +1,47 @@
+<div class="customer-form-container">
+  <h2 mat-dialog-title>Delete Customer?</h2>
+
+  <!-- FirstName -->
+  <div>
+      <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput [(ngModel)]="data.firstName" placeholder="Enter First Name" disabled="true">
+      </mat-form-field>
+      &nbsp;
+      <mat-form-field appearance="outline">
+          <mat-label>Middle Name(Optional)</mat-label>
+          <input matInput [(ngModel)]="data.middleName" placeholder="Enter Middle Name" disabled="true">
+      </mat-form-field>
+      &nbsp;
+      <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input matInput [(ngModel)]="data.lastName" placeholder="Enter Last Name" disabled="true">
+      </mat-form-field>
+  </div>
+
+  <!-- Address -->
+      <mat-form-field appearance="outline">
+          <mat-label>Address</mat-label>
+          <input matInput [(ngModel)]="data.address" placeholder="Enter Address" disabled="true">
+          <mat-icon matSuffix>book</mat-icon>
+      </mat-form-field>
+
+  <!-- Phone -->
+
+      <mat-form-field appearance="outline">
+          <mat-label>Phone</mat-label>
+          <input matInput [(ngModel)]="data.phone" placeholder="Enter Phone Number" disabled="true">
+          <mat-icon matSuffix>phone</mat-icon>
+      </mat-form-field>
+
+
+  <div class="btn-container">
+      <button mat-raised-button (click)="onCloseDialog()">Close</button>
+      &nbsp; &nbsp;
+      <button (click)="onFormSubmit(data)" mat-raised-button color="warn">Delete</button>
+  </div>
+</div>
+
+
+
+

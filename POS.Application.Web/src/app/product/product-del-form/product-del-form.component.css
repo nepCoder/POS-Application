@@ -1,0 +1,30 @@
+.product-form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+
+  .product-form-container > * {
+    width: 100%;
+  }
+
+  .btn-container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  

@@ -1,0 +1,36 @@
+<div class="product-form-container">
+    <h2 mat-dialog-title color="warn">Delete Product!</h2>
+
+
+    <!-- Product -->
+        <mat-form-field appearance="outline" disable>
+            <mat-label>Product Name</mat-label>
+            <input [(ngModel)]="data.product" matInput  disabled="true" placeholder="Enter Product Name">
+        </mat-form-field>
+
+
+    <!-- Cost -->
+    <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>Cost</mat-label>
+        <input matInput [(ngModel)]="data.cost" type="number" disabled="true" class="example-right-align" placeholder="0" >
+        <span matTextPrefix>NPR&nbsp;</span>
+        <span matTextSuffix>.00</span>
+      </mat-form-field>
+
+    <!-- Expiry Date -->
+    <mat-form-field appearance="outline">
+        <mat-label>Expiry Date</mat-label>
+        <input matInput [(ngModel)]="data.expiryDate" [matDatepicker]="picker" placeholder="Pick from picker" disabled="true">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+    <div class="btn-container">
+        <button mat-raised-button (click)="onCancel()">Cancel</button>
+        &nbsp; &nbsp;
+        <button (click)="onDelete()" mat-raised-button color="warn">Delete</button>
+    </div>
+  </div>
+
+
+

@@ -1,0 +1,10 @@
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\bin\Debug\netstandard2.0\POS.Application.LLBL.deps.json
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\bin\Debug\netstandard2.0\POS.Application.LLBL.dll
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\bin\Debug\netstandard2.0\POS.Application.LLBL.pdb
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\obj\Debug\netstandard2.0\POS.Application.LLBL.BusinessEntities.csproj.AssemblyReference.cache
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\obj\Debug\netstandard2.0\POS.Application.LLBL.BusinessEntities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\obj\Debug\netstandard2.0\POS.Application.LLBL.BusinessEntities.AssemblyInfoInputs.cache
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\obj\Debug\netstandard2.0\POS.Application.LLBL.BusinessEntities.AssemblyInfo.cs
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\obj\Debug\netstandard2.0\POS.Application.LLBL.BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\obj\Debug\netstandard2.0\POS.Application.LLBL.dll
+C:\Users\dell\Desktop\AqoreInternship\AssignmentAqore\Week7\POS.Application.Solution\POS.Application.LLBL\POS.Application.BusinessEntities\obj\Debug\netstandard2.0\POS.Application.LLBL.pdb

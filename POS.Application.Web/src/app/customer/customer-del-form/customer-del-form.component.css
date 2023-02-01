@@ -1,0 +1,15 @@
+.customer-form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+.customer-form-container > * {
+  width: 100%;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: right;
+}

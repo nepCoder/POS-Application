@@ -1,0 +1,58 @@
+<!--ToolBar-->
+<mat-toolbar class="toolbar-container" color="primary">
+
+  <button mat-icon-button (click)="sidenav.toggle()"  matTooltip="Menu" >
+<mat-icon>menu</mat-icon>
+  </button>
+
+    <span><a routerLink="home" id="royal-mart">Royal Mart</a></span>
+    <span class="spacer"></span>
+
+  <input class="search" placeholder="Search">
+
+    <button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+
+
+    <button mat-icon-button  matTooltip="Notification" >
+      <mat-icon matBadge="2" matBadgeColor="warn">notification_important</mat-icon>
+    </button>
+
+  <mat-expansion-panel class="expansion-panel">
+    <mat-expansion-panel-header >
+      <mat-panel-description matTooltip="Admin" >
+        Bikash Khanal &nbsp;
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+
+
+
+    <button mat-icon-button matTooltip="Signout" >
+      <mat-icon>logout</mat-icon>
+    </button>
+
+  </mat-toolbar>
+<!------------------------------------------------------------>
+
+<!--SideNav-->
+<mat-sidenav-container class="container">
+  <!--side-nav-menu-->
+  <mat-sidenav class="sidenav" #sidenav mode="side" [opened]="true">
+      <mat-nav-list>
+          <a mat-list-item class="nav-item" *ngFor="let nav of navList" routerLink="{{nav.item}}"  [activated]=nav.isActive>
+            <button mat-icon-button><mat-icon>{{nav.icon}}</mat-icon></button>
+            <span>{{ nav.item | titlecase }}</span>
+          </a>
+        </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- sidnav-content -->
+  <mat-sidenav-content>
+        <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<!------------------------------------------------------------>
+

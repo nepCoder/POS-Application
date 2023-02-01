@@ -1,0 +1,35 @@
+<div class="welcome-bar">
+  <p class="summary" mat-card-title>Today's Summary</p>
+  {{dateToday}}
+</div>
+<mat-divider></mat-divider>
+
+<!-- Summary Cards -->
+<div id="cards-container">
+  <mat-card *ngFor="let card of cardData" class="mat-card" [style.background]="card.color">
+    <mat-card-header>
+      <mat-card-title>{{card.title}}</mat-card-title>
+      <mat-card-subtitle>{{card.subtitle}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- ---------------------------------- -->
+
+<!-- GRID -->
+<mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile class="grid-tile"
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="">
+  <app-top-products *ngIf="tile.name=='top'"></app-top-products>
+  <app-worst-products *ngIf="tile.name=='worst'"></app-worst-products>
+  <app-expired-products *ngIf="tile.name=='expired'"></app-expired-products>
+  <app-expiring-products *ngIf="tile.name=='expiring'"></app-expiring-products>
+  </mat-grid-tile>
+</mat-grid-list>
+
+

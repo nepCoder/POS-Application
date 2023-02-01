@@ -1,0 +1,53 @@
+<div class="customer-form-container">
+  <h2 mat-dialog-title>Edit Customer</h2>
+  <!-- CustomerId -->
+  <div hidden>
+      <mat-form-field appearance="outline">
+          <mat-label>CustomerId</mat-label>
+          <input matInput [(ngModel)]="data.customerId" placeholder="Placeholder" >
+      </mat-form-field>
+  </div>
+  <!-- FirstName -->
+  <div>
+      <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput [(ngModel)]="data.firstName" placeholder="Enter First Name">
+      </mat-form-field>
+      &nbsp;
+      <mat-form-field appearance="outline">
+          <mat-label>Middle Name(Optional)</mat-label>
+          <input matInput [(ngModel)]="data.middleName" placeholder="Enter Middle Name">
+      </mat-form-field>
+      &nbsp;
+      <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input matInput [(ngModel)]="data.lastName" placeholder="Enter Last Name">
+      </mat-form-field>
+  </div>
+
+  <!-- Address -->
+      <mat-form-field appearance="outline">
+          <mat-label>Address</mat-label>
+          <input matInput [(ngModel)]="data.address" placeholder="Enter Address">
+          <mat-icon matSuffix>book</mat-icon>
+      </mat-form-field>
+
+  <!-- Phone -->
+
+      <mat-form-field appearance="outline">
+          <mat-label>Phone</mat-label>
+          <input matInput [(ngModel)]="data.phone" placeholder="Enter Phone Number">
+          <mat-icon matSuffix>phone</mat-icon>
+      </mat-form-field>
+
+
+  <div class="btn-container">
+      <button mat-raised-button (click)="onCloseDialog()">Close</button>
+      &nbsp; &nbsp;
+      <button (click)="onFormSubmit(data)" mat-raised-button color="accent">Update</button>
+  </div>
+</div>
+
+
+
+

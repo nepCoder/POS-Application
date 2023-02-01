@@ -1,0 +1,65 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span>Customer</span>
+    <span class="spacer"></span>
+
+    <a mat-raised-button color="primary" (click)="onOpenAddDialog()">
+      <mat-icon>add_circle_outline</mat-icon><span>Add Customer</span>
+    </a>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<!-- TABLE -->
+<table mat-table [dataSource]="customerData" class="mat-elevation-z8" matSort >
+    <!-- CustomerId Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> CustomerId </th>
+      <td mat-cell *matCellDef="let element"> {{element.customerId}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+      <td mat-cell *matCellDef="let element">{{element.firstName}} {{element.middleName}} {{element.lastName}}  </td>
+    </ng-container>
+
+    <!-- Address Column -->
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Address </th>
+      <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+    </ng-container>
+
+    <!-- Phone Column -->
+    <ng-container matColumnDef="phone">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone </th>
+      <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+    </ng-container>
+
+    <!-- Insert InsertPerson Column -->
+    <ng-container matColumnDef="insertPerson">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> InsertPerson </th>
+      <td mat-cell *matCellDef="let element">{{element.insertPersonId}}</td>
+    </ng-container>
+
+    <!-- Insert InsertDate Column -->
+    <ng-container matColumnDef="insertDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> InsertDate </th>
+      <td mat-cell *matCellDef="let element">{{element.insertDate | date}}</td>
+    </ng-container>
+
+    <!-- Insert Action Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button (click)="onOpenEditDialog(element)" matTooltip="Edit"  color="primary"><mat-icon>edit</mat-icon></button>
+        <span class="spacer"></span>
+        <button mat-icon-button (click)="onOpenDelDialog(element)" matTooltip="Delete"  color="warn"><mat-icon>delete</mat-icon></button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator [length]="200" [pageSizeOptions]="[5, 10, 50, 100]">
+  </mat-paginator>

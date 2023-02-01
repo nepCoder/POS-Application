@@ -1,0 +1,59 @@
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  .container {
+    height: calc(100vh - 70px);
+
+  }
+
+  .sidenav{
+    background-color: #dbdcdc;
+  }
+
+  .nav-item{
+    border-bottom: solid 1px purple;
+  }
+
+  mat-sidenav-content{
+    padding: 15px;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  input{
+    border-radius: 10px;
+    height: 20px;
+    width: auto;
+  }
+
+
+  #royal-mart{
+    font-family:'Cinzel-Bold';
+    font-size: xx-large;
+    color: yellow;
+  }
+
+
+  li{
+    color: black;
+    list-style: none;
+  }
+
+
+  .expansion-panel{
+    background-color:#3f51b5;
+  }
+
+  mat-panel-description{
+    color: white;
+  }
+
+
+
+
+

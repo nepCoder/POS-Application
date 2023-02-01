@@ -1,0 +1,33 @@
+
+.example-header-image {
+  background-image: url('src\assets\customer.jpg');
+  background-size: cover;
+}
+
+.welcome-bar{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Cinzel-SemiBold';
+  color:red;
+}
+
+.summary{
+  font-family: Cinzel-SemiBold;
+}
+
+.mat-card{
+  min-width: 80px;
+  width: 20%;
+}
+
+#cards-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+
+app-top-products, app-worst-products, app-expiring-products, app-expired-products {
+  width: 95%;
+}
